@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/curso4.jpg" type="imagen/png">
+  <title>PetShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid justify-content-end">
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogle" aria-controls="#navbarTogle" aria-expanded="false" aria-label="Togle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between align-items-center mt-2 me-3" id="navbarTogle">
+            <a href="" class="navbar-brand fs-2">PetShop</a>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                 <a href="#perrosVenta" class="nav-link">Ventas</a>
+              </li>
+               <li class="nav-item">
+                 <a href="#footer-contacto" class="nav-link">Contactos</a>
+              </li>
+              <li class="nav-item">
+                  <span class="icono-carrito position-relative d-inline-block">
+                    <a href="" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+                  <span class="text-black cantidad-carrito">0</span>
+                  </span>
+                  <div class="table-responsive contenedor-carrito-compra carrito">
+                    <table class="table table-hover table-striped table-auto table-bordered table-active rounded rounded-3 overflow-hidden lista-carrito">
+                      <thead class="text-center">
+                          <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                              <th>Eliminar</th>
+                          </tr>
+                      </thead>
+                      <tbody class="text-center">
+                      </tbody>
+                    </table>
+                  </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--- Carrousel de img --->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img-perros/img-carrousel01.jpg" class="d-block w-100 img-carrousel" alt="Imagen 1">
+    </div>
+    <div class="carousel-item">
+      <img src="img-perros/img-carrousel04.jpg" class="d-block w-100 img-carrousel" alt="Imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img src="img-perros/img-carrousel03.jpg" class="d-block w-100 img-carrousel" alt="Imagen 3">
+    </div>
+      <div class="carousel-item">
+      <img src="img-perros/img-carrousel05.jpg" class="d-block w-100 img-carrousel" alt="Imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img src="img-perros/img-carrousel06.jpg" class="d-block w-100 img-carrousel" alt="Imagen 3">
+    </div>
+  </div>
+</div>
+<div class="container-fluid  bg-white">
+    <div class="row p-5 pb-4 pt-4 text-center">
+        <div class="col-md parrafo">
+          <h4 class="fst-italic text-center">Alimentos Naturales</h4>
+          <p class="fst-italic">Ofrecemos alimentos 100% naturales y balanceados para el bienestar y energía de tu peludo amigo.</p>
+        </div>
+        <div class="col-md-3 parrafo">
+          <h4 class="fst-italic text-center">Juguetes Interactivos</h4>
+          <p class="fst-italic">Estimula la mente y la diversión de tu perro con nuestra línea de juguetes inteligentes y seguros.</p>
+        </div>
+        <div class="col-md-3 parrafo">
+        <h4 class="fst-italic text-center">Envío Rápido</h4>
+          <p class="fst-italic">Entregas en 24-48 horas en todo el país. Tu perro no tendrá que esperar por su premio.</p>
+        </div>
+         <div class="col-md-3 parrafo">
+          <h4 class="fst-italic text-center">Productos Personalizados</h4>
+          <p class="fst-italic">Personaliza collares, placas, camas y más con el nombre y estilo de tu mascota.</p>
+        </div>
+    </div>
+</div>
+<div class="container d-flex justify-content-center align-items-center mb-5 mt-3 gap-4">
+  <h1 class="text-center text-white fst-italic" id="perrosVenta">Perros a la Venta!</h3>
+  <i style="color:white; font-size: 40px;" class="bi bi-bag-heart"></i>
+</div>
+  <div class="lista-perro">
+    <div class="container">
+      <div class="row mb-5">
+      <div class="col-md-3 col-perro mx-auto">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro1.jpeg" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Shih Tzu</h4>
+                <p class="mb-1">Pequeño y con un pelaje largo y sedoso. se adapta bien a espacios pequeños</p>
+                <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="1"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+       <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro2.jpeg" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Pomerania blanco</h4>
+                <p class="mb-1">Valiente, activo y muy esponjoso. Aunque pequeño, tiene una personalidad audaz y energética.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="2"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+       <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro3.jpeg" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Samoyedo</h4>
+                <p class="mb-1">Amistoso, activo y con un pelaje blanco y grueso. Muy sociable y perfecto para climas fríos</p>
+                   <p class="mb-1 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="3"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro4.jpeg" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Pomerania (color canela)</h4>
+                <p class="mb-1">Alegre, Su apariencia tipo “peluche” lo hace muy popular.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="4"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row mb-5">
+      <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro5.jpeg" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Golden Retriever</h4>
+                <p class="mb-1"> Leal, amigable y juguetón. Uno de los perros familiares más populares por su carácter equilibrado.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="5"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+       <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro6.jpeg" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Caniche (Poodle) Toy</h4>
+                <p class="mb-1">Inteligente, obediente y fácil de entrenar. Su pelaje rizado es hipoalergénico.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="6"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+       <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro7.jpeg" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Husky Siberiano</h4>
+                <p class="mb-1">Independiente, enérgico y con gran resistencia física. Famoso por sus ojos azules y su apariencia de lobo.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="7"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro8.png" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Pastor Australiano (o mestizo similar)</h4>
+                <p class="mb-1">Inteligente, Tiene un instinto natural para el pastoreo.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="8"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row mb-5">
+      <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro9.png" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Airedale Terrier</h4>
+                <p class="mb-1">Activo, valiente y muy inteligente. Es el terrier más grande y destaca por su energía, lealtad y buen carácter con los niños.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="9"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+       <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro10.png" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Husky Siberiano</h4>
+                <p class="mb-1">Enérgico, amigable y muy resistente. Buen compañero de familias activas. Requiere ejercicio diario y atención constante.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="10"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+       <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro11.png" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Shiba Inu (no Shih Tzu)</h4>
+                <p class="mb-1">Pequeño, independiente y muy limpio. Inteligente y ágil, ideal para dueños con experiencia. No es tan cariñoso como parece.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+                <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="11"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-perro">
+          <div class="container contenedor-imagen-perro rounded-3 bg-white">
+              <img src="img-perros/perro4.jpeg" class="card-img-top imagen-perro rounded-2" alt="">
+              <div class="m-3">
+                <h4 class="">Pomerania (no debe llamarse "Animal")</h4>
+                <p class="mb-1">Pequeño y muy peludo. Ideal para espacios pequeños. Requiere cepillado frecuente y compañía.</p>
+                   <p class="mb-2 fst-italic precio">$3000</p>
+             <a href="#" class="btn btn-primary mt-auto agregar-carrito" data-id="12"><i class="fas fa-cart-plus"></i> Agregar al carrito</a>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <!--- Iconos de perros--->
+      <div class="container-fluid contenedor-icono">
+        <div class="container d-flex justify-content-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="iconos-animals" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M309.6 158.5L332.7 19.8C334.6 8.4 344.5 0 356.1 0c7.5 0 14.5 3.5 19 9.5L392 32l52.1 0c12.7 0 24.9 5.1 33.9 14.1L496 64l56 0c13.3 0 24 10.7 24 24l0 24c0 44.2-35.8 80-80 80l-32 0-16 0-21.3 0-5.1 30.5-112-64zM416 256.1L416 480c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-115.2c-24 12.3-51.2 19.2-80 19.2s-56-6.9-80-19.2L160 480c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-230.2c-28.8-10.9-51.4-35.3-59.2-66.5L1 167.8c-4.3-17.1 6.1-34.5 23.3-38.8s34.5 6.1 38.8 23.3l3.9 15.5C70.5 182 83.3 192 98 192l30 0 16 0 159.8 0L416 256.1zM464 80a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"/></svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg"  class="iconos-animals" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M153.7 144.8c6.9 16.3 20.6 31.2 38.3 31.2l192 0c17.7 0 31.4-14.9 38.3-31.2C434.4 116.1 462.9 96 496 96c44.2 0 80 35.8 80 80c0 30.4-17 56.9-42 70.4c-3.6 1.9-6 5.5-6 9.6s2.4 7.7 6 9.6c25 13.5 42 40 42 70.4c0 44.2-35.8 80-80 80c-33.1 0-61.6-20.1-73.7-48.8C415.4 350.9 401.7 336 384 336l-192 0c-17.7 0-31.4 14.9-38.3 31.2C141.6 395.9 113.1 416 80 416c-44.2 0-80-35.8-80-80c0-30.4 17-56.9 42-70.4c3.6-1.9 6-5.5 6-9.6s-2.4-7.7-6-9.6C17 232.9 0 206.4 0 176c0-44.2 35.8-80 80-80c33.1 0 61.6 20.1 73.7 48.8z"/></svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="iconos-animals" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M226.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5s.3-86.2 32.6-96.8s70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3S-2.7 179.3 21.8 165.3s59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7c-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2C84.9 480 64 459.1 64 433.3l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3s29.1 51.7 10.2 84.1s-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5s46.9 53.9 32.6 96.8s-52.1 69.1-84.4 58.5z"/></svg>
+        </div>
+    </div>
+<div class="container-fluid p-0">
+  <img class="imagen-hero" alt="">
+</div>
+      <!--- Footer --->
+  <footer class="bg-dark py-5" id="footer-contacto">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row flex-fill flex-wrap">
+            <div class="col-md-6">
+                <div class="container w-75 mb-3">
+                  <label for="descripcion">Descripcion</label>
+                   <textarea name="" id="descripcion" cols="60" rows="5" class="form-control" placeholder="Descripcion"></textarea>
+                   <div class="errorDescripcion error"></div>
+                </div>
+                <div class="container w-75 mb-3">
+                 <div class="row">
+                    <div class="col-md-6">
+                     <label for="nombre" class="form-label text-white">Nombre</label>
+                     <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                     <div class="errorNombre error"></div>
+                 </div>
+                <div class="col-md-6">
+                    <label for="telefono" class="form-label text-white">Telefono</label>
+                    <input type="text" id="telefono" class="form-control" placeholder="Nombre">
+                    <div class="errorTelefono error"></div>
+                </div>
+                 </div>
+                </div>
+                <div class="container w-75 mb-3">
+                    <label for="correo" class="form-label text-white">Correo</label>
+                    <input type="email" id="correo" class="form-control" placeholder="Nombre">
+                    <div class="errorEmail error"></div>
+                </div>
+                
+                <div class="container w-75">
+                  <div class="flex-fill d-grid mt-4">
+                    <button class="btn btn-outline-light" id="btnEnviar" type="submit">Enviar</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-white text-center mt-2 mb-4 fst-italic">Contactos</h3>
+              <!---- Email, Telefono , Horario -->
+              <div class="d-flex justify-content-between align-items-center">
+              <div>
+                 <ul class="p-0 m-0">
+                  <li class="text-white fst-italic"><i class="fas fa-envelope"></i><em></em> : adamilabreu@hotmail.com</li>
+                  <li class="text-white mt-2 fst-italic"><i class="fas fa-phone"></i> <em></em>: 809-671-5719</li>
+                </ul>
+               </div>
+                <div class="">
+                     <ul class="">
+                        <li class="text-white fst-italic"><i class="fas fa-clock"></i><em></em> : Lun - Vie: 9:00 AM - 6:00 PM <br> Sábados: 9:00 AM - 1:00 PM</li>
+                    </ul>
+                </div>
+                <!---- Iconos Redes -->
+               </div>
+                <div class="container d-flex justify-content-evenly align-items-center mt-5 mb-2">
+                    <a href="#"><i class="fab fa-facebook-f mx-2 icono"></i></a>
+                    <a href="#"><i class="fab fa-instagram mx-2 icono"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp mx-2 icono"></i></a>
+                    <a href="#"><i class="fas fa-envelope mx-2 icono"></i></a>
+                </div>
+               <div class="container d-flex justify-content-evenly align-items-center mt-5 mb-4">
+                    <a href="#"><i class="fab fa-twitter icono"></i></a>
+                    <a href="#"><i class="fab fa-youtube icono"></i></a>
+                    <a href="#"><i class="fab fa-tiktok icono"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </footer>
+    <div class="container-fluid p-3 d-flex justify-content-center align-items-center termino-condiciones">
+          <p><a class="a-termino" href="/politica.html">&copy;@2025 PetShop | Todos los derechos reservados</a></p>
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

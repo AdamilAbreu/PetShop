@@ -1,0 +1,149 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(15, 23, 73);
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+.img-carrousel{
+  max-height: 600px;
+  object-fit: cover;
+}
+.navbar-toggler{
+    color: white;
+}
+.navbar-nav .nav-link, .navbar-brand {
+    color: white !important;
+  }
+.nav-item{
+    position: relative;
+}
+
+  .fa-shopping-cart{
+    font-size: 25px;
+  }
+p{
+    color: rgb(0, 0, 0);
+}
+.contenedor-carrito-compra{
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 600px;
+  max-height: 600px;
+  overflow: auto;
+  background-color: rgb(75, 77, 0);
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100; /*Esto asegura que el carrito se muestre por encima de los otros elementos*/
+  border-radius: 10px;
+}
+.nav-item:hover .contenedor-carrito-compra {
+    display: block;
+}
+th{
+  font-size: 20px;
+}
+td{
+  font-size: 18px;
+   vertical-align: middle;  
+}
+.contenedor-imagen-perro{
+    border: 2px solid white;
+    padding: 5px;
+    max-width: 300px;
+    transition: all .2s ease-in-out;
+    box-shadow: 4px 3px 8px rgba(255, 255, 255, 0.568);
+}
+.contenedor-imagen-perro:hover{
+      transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(251, 255, 0, 0.521);
+}
+.imagen-perro{
+    object-fit: cover;
+    height: 200px; /*Obliga a la imagen a adaptarse a su contenedor*/
+}
+.col-perro{
+    padding-bottom: 20px;
+}
+.contenedor-icono{
+    background-color: rgb(210, 210, 221);
+}
+.container-footer{
+    background-color: rgb(70, 76, 187);
+}
+ li{
+        list-style: none;
+        font-size: 20px;
+      }
+      .iconos-animals{
+        width: 50px;
+        margin: 10px;
+        fill: rgb(36, 27, 27);
+      }
+      .icono{
+        color:white;
+        font-size: 40px;
+      }
+      .facebook:hover{
+fill: #1877F2;
+      }
+       .instagram:hover{
+        fill: #E1306C;
+      }
+       .linkedin:hover{
+        fill: #0A66C2;
+      }
+.termino-condiciones{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+.a-termino{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.cantidad-carrito{
+  font-size: .90rem;
+  top: -10px;
+  right: -15px;
+  position: absolute;
+  border-radius: 40%;
+  padding: 5px;
+  line-height: 1;
+  background-color: white;
+}
+
+.imagen-hero{
+  width: 100%;
+  height: 400px;
+  background-image: url('img-perros/img-background05.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 6px 10px 3px rgb(199, 190, 190);
+}
+.parrafo{
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 4px black;
+}
+.precio{
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.651);
+}
+.borrar{
+  background-color: red;
+  border-radius: 15%;
+  padding: 7px;
+}
+.error{
+  color: white;
+  margin: 4px 0;
+}
